@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="./css/member.css">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@550&family=Noto+Sans+KR:wght@200&family=Roboto&family=Song+Myung&display=swap" rel="stylesheet">
+    <script src="./js/member.js" type="text/javascript" defer></script>
 </head>
 <body >
 
@@ -32,137 +33,15 @@
 <div class="contents">
     <div class="title">
         <p class="about">Member</p>
-        <p class="about2">1기 &nbsp; total 26</p>
+        <div class="generation">
+            <p class="about2 selected" onclick="handleClick(this)">all</p>
+            <p class="about2" onclick="handleClick(this)">season2</p>
+            <p class="about2" onclick="handleClick(this)">season1</p>
+        </div>
     </div>
+
     <div class="description">
-        <div class="team">
-            <div class="teamName">game team</div>
-            <div class="memberSet">
-                <div class="member">
-                    <p class="name">PM &nbsp;&nbsp;|&nbsp; 박근태</p>
-                    <p class="memDetail">PM</p>
-                </div>
-                <div class="member">
-                    <p class="name">김문석</p>
-                    <p class="memDetail">QC</p>
-                </div>
-                <div class="member">
-                    <p class="name">김석현</p>
-                    <p class="memDetail">서배개발 ・ DB ・ 배포</p>
-                </div>
-                <div class="member">
-                    <p class="name">김동위</p>
-                    <p class="memDetail">개발</p>
-                </div>
-                <div class="member">
-                    <p class="name">진현명</p>
-                    <p class="memDetail">개발</p>
-                </div>
-                <div class="member">
-                    <p class="name">채종인</p>
-                    <p class="memDetail">개발</p>
-                </div>
-                <div class="member">
-                    <p class="name">주홍진</p>
-                    <p class="memDetail">개발</p>
-                </div>
-                <div class="member">
-                    <p class="name">홍승민</p>
-                    <p class="memDetail">개발</p>
-                </div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="teamName">shopping mall team</div>
-            <div class="memberSet">
-                <div class="member">
-                    <p class="name">PM &nbsp;&nbsp;|&nbsp; 박찬엽</p>
-                    <p class="memDetail"> PM </p>
-                </div>
-                <div class="member">
-                    <p class="name">박창윤</p>
-                    <p class="memDetail">백엔드</p>
-                </div>
-                <div class="member">
-                    <p class="name">이예은</p>
-                    <p class="memDetail">백엔드</p>
-                </div>
-                <div class="member">
-                    <p class="name">문종찬</p>
-                    <p class="memDetail">프론트엔드</p>
-                </div>
-                <div class="member">
-                    <p class="name">표준수</p>
-                    <p class="memDetail">프론트엔드</p>
-                </div>
-                <div class="member">
-                    <p class="name">김진수</p>
-                    <p class="memDetail">DB</p>
-                </div>
-                <div class="member">
-                    <p class="name">한보미</p>
-                    <p class="memDetail">디자인</p>
-                </div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="teamName">notepad team</div>
-            <div class="memberSet">
-                <div class="member">
-                    <p class="name">PM &nbsp;&nbsp;|&nbsp; 김원</p>
-                    <p class="memDetail">PM</p>
-                </div>
-                <div class="member">
-                    <p class="name">권민지</p>
-                    <p class="memDetail">백엔드 ・ DB</p>
-                </div>
-                <div class="member">
-                    <p class="name">이세빈</p>
-                    <p class="memDetail">프론트</p>
-                </div>
-                <div class="member">
-                    <p class="name">윤창희</p>
-                    <p class="memDetail">DB</p>
-                </div>
-                <div class="member">
-                    <p class="name">손병혁</p>
-                    <p class="memDetail">디자인</p>
-                </div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="teamName">community team</div>
-            <div class="memberSet">
-                <div class="member">
-                    <p class="name">PM &nbsp;&nbsp;|&nbsp; 전상은</p>
-                    <p class="memDetail">PM</p>
-                </div>
-                <div class="member">
-                    <p class="name">김민성</p>
-                    <p class="memDetail">study</p>
-                </div>
-                <div class="member">
-                    <p class="name">서종우</p>
-                    <p class="memDetail">study</p>
-                </div>
-                <div class="member">
-                    <p class="name">양윤기</p>
-                    <p class="memDetail">study</p>
-                </div>
-                <div class="member">
-                    <p class="name">조준형</p>
-                    <p class="memDetail">study</p>
-                </div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="teamName">free</div>
-            <div class="memberSet">
-                <div class="member">
-                    <p class="name">이규원</p>
-                    <p class="memDetail">teaching   </p>
-                </div>
-            </div>
+        <div class="team" id="teamList">
         </div>
     </div>
 </div>
