@@ -65,18 +65,32 @@ body::-webkit-scrollbar {
     margin-top: 150px;
     margin-bottom: 30px;
     animation: fadein 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .about {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .about2 {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     font-weight: 300;
     margin-top: 0;
+    margin-right: 25px;
+    cursor: pointer;
 }
-
+.selected{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.generation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 가로 정렬 */
+}
 .description {
     color:#E0E1E5;
     margin-top: 0%;
